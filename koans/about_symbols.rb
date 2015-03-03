@@ -12,7 +12,7 @@ class AboutSymbols < Neo::Koan
     symbol3 = :something_else
 
     assert_equal true, symbol1 == symbol2
-    assert_equal __, symbol1 == symbol3
+    assert_equal false, symbol1 == symbol3
   end
 
   def test_identical_symbols_are_a_single_internal_object
