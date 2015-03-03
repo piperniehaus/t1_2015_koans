@@ -69,7 +69,7 @@ class AboutSymbols < Neo::Koan
 
   def test_symbols_are_not_strings
     symbol = :ruby
-    assert_equal __, symbol.is_a?(String)
+    assert_equal false, symbol.is_a?(String)
     assert_equal __, symbol.eql?("ruby")
   end
 
